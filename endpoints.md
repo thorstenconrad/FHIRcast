@@ -1,8 +1,8 @@
 # FHIRcast Endpoints
 
-<small>FHIR&reg; is the registered trademark of HL7 and is used with the permission of HL7.</small>
+<small>*FHIR&reg; is the registered trademark of HL7 and is used with the permission of HL7.*</small>
 
-This document describes the needed Endpoints for the actors involved in a FHIR cast communication.
+This document describes the needed communication endpoints for the actors involved in a FHIR cast communication.
 
 ## HUB
 

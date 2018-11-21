@@ -1,6 +1,6 @@
 # FHIRCast actors
 
-<small>FHIR&reg; is the registered trademark of HL7 and is used with the permission of HL7.</small>
+<small>*FHIR&reg; is the registered trademark of HL7 and is used with the permission of HL7.*</small>
 
 The figure shows the actors involved in the FHIRcast protocol and the relevant transactions between them. 
 
@@ -16,7 +16,4 @@ The following table shows the actor and the transaction definitions.
 |Client|Subscribe|R||
 |Client|Unsubscribe|O||
 |Client|Event Notification|R||
-
-
-
 
