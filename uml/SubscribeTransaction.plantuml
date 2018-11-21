@@ -1,0 +1,46 @@
+@startuml
+skinparam monochrome true
+
+skinparam sequence {
+	ArrowColor #000
+	ActorBorderColor #000
+	NoteBorderColor #000
+	ParticipantBorderColor #000
+	LifeLineBorderColor #333
+	LifeLineBackgroundColor #CCC
+}
+
+participant "**Client**" as Client #E6E6E6
+participant "**  Hub  **" as Hub #E6E6E6
+
+
+...
+note right of Client #CCC
+	**Client A** subscribes for 
+	Events at the hub 
+end note
+
+Client -> Hub : Subscription Request
+activate Hub
+activate Client
+Hub -> Hub: validate request
+activate Hub
+Hub -> Hub: schedule verification
+Client <-- Hub : 202 "Accept"
+deactivate Hub
+deactivate Client
+deactivate Hub
+...
+Client <- Hub: Verification Request
+activate Hub
+activate Client
+Client --> Hub: Verification Response
+Hub -> Hub: verify challenge in response
+deactivate Client
+deactivate Hub
+...
+note right of Client #CCC
+	Subscription Done 
+end note
+
+@enduml
