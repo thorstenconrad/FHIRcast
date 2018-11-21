@@ -9,8 +9,9 @@ The FHIRcast project is defined by HL7 International (http://hl7.org). For more 
 
 ## Documentation: Actors and Transactions and other Stuff
 
-For more information about the involved actors and the transactions have a look here:
+For more information about the involved actors, transactions and other stuff, have a look here:
 
 * [Actors](actors.md)
 * [Transactions](transactions.md)
 * [Endpoints](endpoints.md)
+* [Events](events.md)

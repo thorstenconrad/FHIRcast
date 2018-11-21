@@ -7,8 +7,14 @@ This document describes the transactions used in FHIRcast, not in terms of a dat
 >Transactions are interactions between actors that transfer the required information through messages.<br>
 <sub>*Out of the [IHE Technical Framework](https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_TF_Vol1.pdf)*</sub>
 
+## Overview
+1. [Subscribe](#subscribe)
+2. [Unsubscribe](#unsubscribe)
+2. [Publish Event](#publish)
+2. [Event Notification](#notification)
 
-## Subscribe
+
+## <a name="subscribe"></a>Subscribe
 
 ### Scope
 A Client actor using this transaction may locate and join a context  session *specific to the workstation ?* known as "topic" at the Hub actor on which the current user is interacting. The client actor sends in the subscription request the events of interest which may be notified by other Client actors to the Hub within the session.
@@ -26,7 +32,7 @@ A Client actor using this transaction may locate and join a context  session *sp
 * Excpected Actions
 * Security Considerations
 
-## Unsubscribe
+## <a name="unsubscribe"></a>Unsubscribe
 
 ### Scope
 A Client actor using this transaction informs the Hub actor that teh interrest of the context session is no longer needed and therefor no more notifications should be reported to him.
@@ -44,7 +50,7 @@ A Client actor using this transaction informs the Hub actor that teh interrest o
 * Excpected Actions
 * Security Considerations
 
-## Announce Event Notification
+## <a name="publish"></a>Publish Event
 
 *TODO: describe the transaction*
 * Scope
@@ -54,7 +60,7 @@ A Client actor using this transaction informs the Hub actor that teh interrest o
 * Excpected Actions
 * Security Considerations
 
-## Context Changed Notification
+## <a name="notification"></a>Event Notification
 
 *TODO: describe the transaction*
 * Scope

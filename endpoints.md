@@ -11,13 +11,13 @@ A FHIR Cast Hub ist hosted at *`http://host:port/whatever`*, known as the base u
 | Endpoint | Description |
 |---|---|
 |[base]/{subscription}| This endpoint handles the subscribe / unsubscribe requests from the clients|
-|[base]/{notification}| Endpoint to process the event notification requests |
+|[base]/{notification}| Endpoint to process the publish event requests |
 
-## Client
+## Event Publisher / Event Receiver
 
-A client needs also to provide an endpoint to interact with the Hub.
+The *Event Publisher* and the *Event Receiver* needs also to provide an endpoint to interact with the Hub.
 
 | Endpoint | Description |
 |---|---|
-|[base]/{callback}| This is the endpoint to receive the subscription verification notification requests from the Hub.
+|[base]/{callback}| This is the endpoint to receive the subscription verification and event notification requests from the Hub.
 
