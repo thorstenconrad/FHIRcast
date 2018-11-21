@@ -4,8 +4,8 @@
 
 This document describes the transactions used in FHIRcast, not in terms of a database transaction where an actor has to rollback data in case of an exception. 
 
->Transactions are interactions between actors that transfer the required information through messages
-> *Out of the [IHE Technical Framework](https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_TF_Vol1.pdf)*
+>Transactions are interactions between actors that transfer the required information through messages.<br>
+<sub>*Out of the [IHE Technical Framework](https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_TF_Vol1.pdf)*</sub>
 
 
 ## Subscribe
