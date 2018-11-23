@@ -26,15 +26,16 @@ The **Event Receiver** actor receives event notifications from the **Hub** actor
 ## Actor Transactions
 The following table shows the actor and the transaction definitions. 
 
-|Actor|Transaction|Opt.|Section|
-|---|---|---|---|
-|Hub|Subscribe|R||
-|Hub|Unsubscribe|R||
-|Hub|Publish Event|R||
-|Hub|Event Notification|R||
-|Event Publisher|Subscribe|R||
-|Event Publisher|Unsubscribe|O||
-|Event Publisher|Publish Event|R||
-|Event Receiver|Subscribe|R||
-|Event Receiver|Unsubscribe|O||
-|Event Receiver|Event Notification|R||
+Actor          |Transaction       |Opt. |Section
+---------------|------------------|:---:|---
+Hub            |Subscribe         |R    |
+Hub            |Unsubscribe       |R    |
+Hub            |Publish Event     |R    |
+Hub            |Event Notification|R    |
+Event Publisher|Subscribe         |R    |
+Event Publisher|Unsubscribe       |O    |
+Event Publisher|Publish Event     |R    |
+Event Receiver |Subscribe         |R    |
+Event Receiver |Unsubscribe       |O    |
+Event Receiver |Event Notification|R    |
+

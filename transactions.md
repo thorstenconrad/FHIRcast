@@ -13,6 +13,7 @@ This document describes the transactions used in FHIRcast, not in terms of a dat
 2. [Publish Event](#publish)
 2. [Event Notification](#notification)
 
+![Overview](out/uml/Overview/Overview.png)
 
 ## <a name="subscribe"></a>Subscribe
 
@@ -21,9 +22,9 @@ A Client actor using this transaction may locate and join a context  session *sp
 
 ### Actor Roles
 
-**Actor:** Client<br>
+**Actor:** Client
 **Role:** Initiates the subscription intention to the Hub for a list of events reported by other Client actors within a specific context.<br>
-**Actor:** Hub<br>
+**Actor:** Hub
 **Role:** Responses to the subscription request of a client and verifies the authentity of the Client.
 
 *TODO: describe the transaction*
@@ -39,9 +40,9 @@ A Client actor using this transaction informs the Hub actor that teh interrest o
 
 ### Actor Roles
 
-**Actor:** Client<br>
+**Actor:** Client
 **Role:** Initiates the desubscription intention to the Hub for all events reported by other Client actors within the previously subscribed context.<br>
-**Actor:** Hub<br>
+**Actor:** Hub
 **Role:** Responses to the desubscription request of a client and removes the list of notification receivers.
 
 *TODO: describe the transaction*
