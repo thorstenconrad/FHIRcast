@@ -1,0 +1,41 @@
+@startuml
+
+!include ./uml/style.iuml
+
+hide footbox
+
+title
+ Simple overview of how two 
+ applications share a context 
+end title
+
+actor "User" as user
+participant "Application 1" as sys1
+participant "Application 2" as sys2
+participant " Hub " as hub
+
+user -> sys1 : launch
+activate sys1
+sys1 -> hub: subscribe topic
+activate hub
+sys1 --> sys2: launch with topic
+activate sys2
+sys2 -> hub : subscribe topic
+...
+user -> sys1 : open patient chart
+sys1 -> hub : publish event
+sys2 <- hub : event notification
+sys2 -> sys2 : open patient record
+...
+user -> sys1 : logout
+sys1 -> hub : publish event 
+sys2 <- hub : event notification
+sys2 -> hub : unsubscribe
+sys2 -> sys2 : terminate
+deactivate sys2
+
+sys1 -> hub : unsubscribe
+sys1 -> sys1 : terminate
+deactivate sys1
+
+@enduml

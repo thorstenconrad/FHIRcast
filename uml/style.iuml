@@ -1,0 +1,19 @@
+skinparam monochrome true
+
+skinparam sequence {
+	ArrowColor #000
+	ActorBorderColor #333
+	' NoteBorderColor #000
+
+	'ParticipantBackgroundColor grey
+	'ParticipantFontName Arial
+	'ParticipantFontSize 10
+	'ParticipantFontColor #FFF
+	'ParticipantBorderColor #000
+    ParticipantPadding 30
+
+	LifeLineBorderColor #666
+	LifeLineBackgroundColor #CCC
+
+    BoxPadding 120
+}

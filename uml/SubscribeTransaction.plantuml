@@ -1,18 +1,9 @@
 @startuml
-skinparam monochrome true
 
-skinparam sequence {
-	ArrowColor #000
-	ActorBorderColor #000
-	NoteBorderColor #000
-	ParticipantBorderColor #000
-	LifeLineBorderColor #333
-	LifeLineBackgroundColor #CCC
-}
+!include ./uml/style.iuml
 
 participant "**Client**" as Client #E6E6E6
 participant "**  Hub  **" as Hub #E6E6E6
-
 
 ...
 note right of Client #CCC
