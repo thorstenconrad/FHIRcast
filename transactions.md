@@ -4,8 +4,10 @@
 
 This document describes the transactions used in FHIRcast, not in terms of a database transaction where an actor has to rollback data in case of an exception. 
 
->Transactions are interactions between actors that transfer the required information through messages.<br>
+>Transactions are interactions between actors that transfer the required information through messages.\
 <sub>*Out of the [IHE Technical Framework](https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_TF_Vol1.pdf)*</sub>
+
+<img align="right" src="./out/uml/Overview/Overview.png" alt="Overview" width="300" >
 
 ## Overview
 1. [Subscribe](#subscribe)
@@ -13,7 +15,8 @@ This document describes the transactions used in FHIRcast, not in terms of a dat
 2. [Publish Event](#publish)
 2. [Event Notification](#notification)
 
-![Overview](out/uml/Overview/Overview.png)
+*Note:
+The launch of an application and sharing the topic is out of scope of this protocol. FHIRcast recommends the <a href="http://www.hl7.org/fhir/smart-app-launch">SMART App Lauch Framework</a>.*
 
 ## <a name="subscribe"></a>Subscribe
 
@@ -22,9 +25,9 @@ A Client actor using this transaction may locate and join a context  session *sp
 
 ### Actor Roles
 
-**Actor:** Client
+**Actor:** Client  
 **Role:** Initiates the subscription intention to the Hub for a list of events reported by other Client actors within a specific context.<br>
-**Actor:** Hub
+**Actor:** Hub  
 **Role:** Responses to the subscription request of a client and verifies the authentity of the Client.
 
 *TODO: describe the transaction*
@@ -40,9 +43,9 @@ A Client actor using this transaction informs the Hub actor that teh interrest o
 
 ### Actor Roles
 
-**Actor:** Client
+**Actor:** Client  
 **Role:** Initiates the desubscription intention to the Hub for all events reported by other Client actors within the previously subscribed context.<br>
-**Actor:** Hub
+**Actor:** Hub  
 **Role:** Responses to the desubscription request of a client and removes the list of notification receivers.
 
 *TODO: describe the transaction*
